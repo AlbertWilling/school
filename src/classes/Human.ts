@@ -16,7 +16,7 @@ export abstract class Human implements iHuman{
         return "";
     };
 
-    shout(): string{
+    say(): string{
         return "";
     }
 

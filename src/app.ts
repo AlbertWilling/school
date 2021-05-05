@@ -10,13 +10,11 @@ const officeWorker = new OfficeWorker("Joanna", "joanna@wp.pl", "PL");
  
 const people: Human[] = [student2, student1, mentor, officeWorker]; 
  
-const module = new Module("TypeScript");
-const module.students = [student2, student1];
-const module.mentor = mentor;
+// const module = new Module("TypeScript");
+// const module.students = [student2, student1];
+// const module.mentor = mentor;
  
 for(let person of people)
 {
-	person.toString();
-    	person.say();
-    	person.play();
+	console.log(person.toString(), person.say(), person.play());
 }
