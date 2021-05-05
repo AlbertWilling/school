@@ -12,20 +12,17 @@ export abstract class Human implements iHuman{
         this.nationality = nationality;
     }
 
-    playInstrument(instrument: string){
-        switch (instrument) {
-            case "nerves": return "Wrr!";
-            case "guitar": return "plum plum";
-            case "trumptet": return "tu trututu";
-        }
+    play(): string{
+        return "";
     };
 
-    shout(){
-
+    shout(): string{
+        return "";
     }
+ 
 
     toString(){
-
-    };
+        return `${this.name} + ${this.email} + ${this.nationality}`
+    }
 
 }
