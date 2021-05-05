@@ -1,5 +1,0 @@
-enum Instruments {
-    nerves: string = "Wrrr!";
-    guitar: string = "plum plum";
-    trumpet: string = "tu turutu!";
-}
