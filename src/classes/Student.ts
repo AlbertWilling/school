@@ -1,14 +1,12 @@
 import { Human } from "./Human";
  
 export class Student extends Human{
-    nationality: string;
 
     constructor(name: string, email: string, nationality: string){
-        super(name, email);
-        this.nationality = nationality;
+        super(name, email, nationality);
     }
 
-    
+
 
 
     toString(){
