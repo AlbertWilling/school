@@ -1,3 +1,5 @@
+import { Instruments } from "../enum/Instruments";
+import { Shouts } from "../enum/Shouts";
 import { Human } from "./Human";
  
 export class Student extends Human{
@@ -6,13 +8,15 @@ export class Student extends Human{
         super(name, email, nationality);
     }
 
-
-
-
-    toString(){
-        return `${this.name} + ${this.email} + ${this.nationality}`
+    say(){
+        switch(this.nationality){
+            case "PL": return `${Shouts.studentPL}`;
+            case "HU": return `${Shouts.studentHU}`;
+            default: return "";
+        }
     }
 
-
-
+    play():string{
+        return `${Instruments.nerves}`;
+    }
 }

@@ -19,7 +19,6 @@ export abstract class Human implements iHuman{
     shout(): string{
         return "";
     }
- 
 
     toString(){
         return `${this.name} + ${this.email} + ${this.nationality}`

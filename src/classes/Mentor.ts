@@ -1,10 +1,16 @@
+import { Instruments } from "../enum/Instruments";
+import { Shouts } from "../enum/Shouts";
 import {Human} from "./Human";
 
 
 export class Mentor extends Human{
 
-    constructor(name: string, email: string, nationality:string){
-        super(name, email, nationality)
+    say(){
+        return `${Shouts.mentor}`;
+    }
+
+    play(){
+        return `${Instruments.guitar}`;
     }
 
 }

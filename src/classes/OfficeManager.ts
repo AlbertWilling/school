@@ -1,8 +1,10 @@
+import { Shouts } from "../enum/Shouts";
 import {OfficeWorker} from "./OfficeWorker";
 
 export class OfficeManager extends OfficeWorker{
-    say(){
-
+    
+    say():string {
+        return `${Shouts.officeManager}`;
     }; 
 
 }
