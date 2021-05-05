@@ -2,6 +2,7 @@ import {Human} from "./classes/Human";
 import {Mentor} from "./classes/Mentor";
 import {OfficeWorker} from "./classes/OfficeWorker";
 import {Student} from "./classes/Student";
+import {Module} from "./classes/Module";
 
 const student1 = new Student("Antek", "antek@wp.pl", "PL");
 const student2 = new Student("Joshin", "joshin@wh.hu", "HU");
@@ -10,9 +11,9 @@ const officeWorker = new OfficeWorker("Joanna", "joanna@wp.pl", "PL");
  
 const people: Human[] = [student2, student1, mentor, officeWorker]; 
  
-// const module = new Module("TypeScript");
-// const module.students = [student2, student1];
-// const module.mentor = mentor;
+const module = new Module("TypeScript");
+module.students = [student2, student1];
+module.mentor = mentor;
  
 for(let person of people)
 {
